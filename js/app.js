@@ -53,7 +53,6 @@ const switchTab = (id) => {
 const createPost = (post) => {
     console.log(post);
     const image = post.image;
-    const userImage = post.userImage;
     const div = document.createElement( "article" );
     div.classList.add( "post" );
     div.innerHTML = `
@@ -64,7 +63,7 @@ const createPost = (post) => {
                     target="_blank"
                     class="post__avatar"
                   >
-                    <img src="${userImage}" alt="User Picture" />
+                    <img src="${post.userImage}" alt="User Picture" />
                   </a>
                   <a href="#" class="post__user">phero</a>
                 </div>
@@ -154,8 +153,9 @@ const displayLikedPosts = () => {
 };
 
 const displayReportedPosts = () => {
+  document.getElementById( "reported" ).innerHTML = '';
     const reportedPosts = getReportedPosts();
-    posts.forEach((post) => {
+    reportedPosts.forEach((post) => {
         const div = createPost(post);
         document.getElementById( "reported" ).appendChild(div);
     });
