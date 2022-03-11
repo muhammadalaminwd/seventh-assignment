@@ -88,12 +88,43 @@
             </div>
 
             <div class="m-5 text-start">
-                <h1 class="text-success fs-1">Q.2: What does Javascript event loop do?<h1>
-                <p class="fs-4 fw-light"></p>
-            </div>
-
-            <div class="m-5 text-start">
                 <h1 class="text-success fs-1">Q.3: Difference between local storage and session storage?<h1>
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th class="fs-2 fw-normal text-center" scope="col">Context</th>
+                            <th class="fs-2 fw-normal text-center" scope="col">Local Storage</th>
+                            <th class="fs-2 fw-normal text-center" scope="col">Session Storage</th>
+                          </tr>
+                        </thead>
+                        <tbody class="">
+                          <tr >
+                            <td class="fs-4 fw-light text-center" scope="row">1. Definition</td>
+                            <td class="fs-4 fw-light" scope="row">localStorage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date.</td>
+                            <td class="fs-4 fw-light">The sessionStorage object stores data only for a session. It means that the data stored in the sessionStorage will be deleted when the browser is closed.</td>
+                          </tr>
+                          <tr >
+                            <td class="fs-4 fw-light text-center" scope="row">2. Method</td>
+                            <td class="fs-4 fw-light" scope="row">localStorage has 4 methods. They are setItem(), getItem(), removeItem() and clear().</td>
+                            <td class="fs-4 fw-light">sessionStorage has 5 methods. They are getItem(key), setItem(key, value), removeItem(key), key(position), clear()</td>
+                          </tr>
+                          <tr >
+                            <td class="fs-4 fw-light text-center" scope="row">3. Capacity</td>
+                            <td class="fs-4 fw-light" scope="row">It has 5MB/10MB storage capacity.</td>
+                            <td class="fs-4 fw-light">It has 5MB storage capacity.</td>
+                          </tr>
+                          <tr >
+                            <td class="fs-4 fw-light text-center" scope="row">4. Durability</td>
+                            <td class="fs-4 fw-light" scope="row">It stores data permanently but It can be deleted via Javascript or manually</td>
+                            <td class="fs-4 fw-light">It stores data only for the duration of a session and it is automatically deleted when the browser is closed. </td>
+                          </tr>
+                          <tr >
+                            <td class="fs-4 fw-light text-center" scope="row">5. Readability</td>
+                            <td class="fs-4 fw-light" scope="row">The client can read it.</td>
+                            <td class="fs-4 fw-light">The also client can read it.</td>
+                          </tr>
+                        </tbody>
+                      </table>
                 <p class="fs-4 fw-light"></p>
             </div>
         </section>
